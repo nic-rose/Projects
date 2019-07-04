@@ -5,7 +5,8 @@ The traveling salesman problem is defined as below:
  - The salesman also wants to end in the same city that he started in.
  - The salesman can also go from and city to any city.  
 
-## http://www.math.uwaterloo.ca/tsp/world/countries.html
+http://www.math.uwaterloo.ca/tsp/world/countries.html
+
 `TSP.py` was created by Dr. Art White and this program takes in data from the link above and turns the data in to a usable matrix that holds the distance between any two cities.  
 
 The data comes from the tsp files that are also in this folder.  The name of the tsp files is the name of the tour that is going to be taken and then the number of cities that it includes. 
