@@ -18,3 +18,18 @@ The current `matrix.txt` which is the distance matrix produced by TSP.py is set 
 `txtparser.py` is a script that goes through the large output file produced by GA_TSP_Tester.py and finds which configuration on average produces the best results. The output for this program is `Summary.txt`
 
 `GA_TSP` is going to be the single configuration version on `GA_TSP_Tester` where it only runs one set of variables.  WIP.
+
+## Setup/Run
+1. Open `TSP.py` and give it the .tsp file that you would like to try.  (`wi29.tsp` is currently being used).
+
+2. python3 `TSP.py`
+
+3. python3 `GA_TSP_Tester.py` (also can be run with pypy).
+
+4. python3 `txtparser.py`
+
+5. Open `summary.txt`, this should contain the best configuration for the tour that was given.
+
+6. Open `GA_TSP.py`, and change the global varibles to the configuration that was in `summary.txt`.
+
+6. python3 `GA_TSP.py`

@@ -47,7 +47,7 @@ def FindMinFitness(runList):
 
 def main():
 
-    runList = readinFile("remasteredTest.txt")
+    runList = readinFile("ConfigResults.txt")
     print(runList)
     paramsList = FindMinFitness(runList)
     print(paramsList)
