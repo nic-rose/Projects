@@ -37,14 +37,20 @@ The current `matrix.txt` which is the distance matrix produced by TSP.py is set 
 
 ## In Depth Analysis
 - Gen0
+
     A individual is created by making a list from 0 to the number of cities in the tour and then those numbers are suffled so the list is randomized. This is repeated until the entire population is created. 
 - fitnessfunction 
+
     This function measures the number of miles it would take to complete the tour. This is done by the iterating through the list of cities and finding the distanced between the two cities until the end point is reached. 
 - tournment
+
     The weakest individuls are removed from the population by a tournment style approach. The size of the tournment is determinded by a global varible, which can be any number between 2 and the population size.  The individuls are pulled from the old population and the individual with the best fitness will be placed new population.  This process is continued until the new population is created, this process is called a generation.  This approach's only guarantee is that the worst individul does not continue to the next population. 
 - crossover
+
     Crossover is used to find the parts of an individul that makes that individul more fit and give them to other individuls in the population. Crossover is this program is implemented by randomly taking a segment of one individul and reordering the numbers in second individul to match the order of the numbers of the segment extracted from the first individul. This approach is simple and still produces good results.  
 - mutation
+
     Mutation is used to help increase the search space of the algorithm to help find a better solution.  This is done by randomly swapping two cities in the individul (ex. 1,2,3,4,5 - 1,3,2,4,5).
 - converge
+
     Converage searches through the entire population checking to see if 95% of the population is the same.  Once 95% of the population is the same this is the best solution that the algoithm found.  
