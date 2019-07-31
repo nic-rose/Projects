@@ -4,6 +4,8 @@ def options():
     print("1. Add an assignment")
     print("2. Show assignments")
     print("3. Delete assignment")
+    print("4. Edit assignmment")
+    print("Exit. To stop the program")
     option = input("choose the number that needs done ")
     return option
 
@@ -18,6 +20,7 @@ def showAssignments(assignments):
         for j in i:
             aStr = aStr + j + " "
         print(aStr)
+    print()
 
 def deleteAssignment(assignments):
     removeA = input("What is the name of the assignment you would like to delete? ")
@@ -29,26 +32,32 @@ def deleteAssignment(assignments):
 
 def editAssignment(assignments):
     deleteAssignment(assignments)
-    addAssignment(assignments):
-    
+    addAssignment(assignments)
+
 def main():
+    exitOptions = ["exit", "Exit", "e", "quit", "Quit", "q"]
     infile = open("assignments.txt", "r")
     assignments = []
     for i in infile:
         linelst = i.split()
         assignments.append(linelst)
-
     infile.close()
-    option = options()
 
-    if option == "1":
-        addAssignment(assignments)
-    if option == "2":
-        showAssignments(assignments)
-    if option == "3":
-        deleteAssignment(assignments)
-    if option == "4":
-        editAssignment(assignment)
+    option = options()
+    while 1:
+        if option == "1":
+            addAssignment(assignments)
+        if option == "2":
+            showAssignments(assignments)
+        if option == "3":
+            deleteAssignment(assignments)
+        if option == "4":
+            editAssignment(assignment)
+        if option in exitOptions:
+            print("Exiting")
+            break
+
+        option = options()
 
 
     outfile = open("assignments.txt", "w")
