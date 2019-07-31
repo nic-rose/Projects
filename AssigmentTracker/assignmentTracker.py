@@ -25,9 +25,12 @@ def deleteAssignment(assignments):
     for i in assignments:
         if i[3] == removeA:
             assignments.pop(count)
-
         count +=1
 
+def editAssignment(assignments):
+    deleteAssignment(assignments)
+    addAssignment(assignments):
+    
 def main():
     infile = open("assignments.txt", "r")
     assignments = []
@@ -44,8 +47,12 @@ def main():
         showAssignments(assignments)
     if option == "3":
         deleteAssignment(assignments)
+    if option == "4":
+        editAssignment(assignment)
+
 
     outfile = open("assignments.txt", "w")
+    assignments.sort()
     for i in assignments:
         for j in i:
             outfile.write(j + " ")
