@@ -1,8 +1,9 @@
 ## Assigment Tracker
 
 def options():
-    print("1. add an assignment")
-    print("2. show assignments")
+    print("1. Add an assignment")
+    print("2. Show assignments")
+    print("3. Delete assignment")
     option = input("choose the number that needs done ")
     return option
 
@@ -18,6 +19,15 @@ def showAssignments(assignments):
             aStr = aStr + j + " "
         print(aStr)
 
+def deleteAssignment(assignments):
+    removeA = input("What is the name of the assignment you would like to delete? ")
+    count = 0
+    for i in assignments:
+        if i[3] == removeA:
+            assignments.pop(count)
+
+        count +=1
+
 def main():
     infile = open("assignments.txt", "r")
     assignments = []
@@ -32,6 +42,8 @@ def main():
         addAssignment(assignments)
     if option == "2":
         showAssignments(assignments)
+    if option == "3":
+        deleteAssignment(assignments)
 
     outfile = open("assignments.txt", "w")
     for i in assignments:
