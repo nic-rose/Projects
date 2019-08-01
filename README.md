@@ -8,3 +8,6 @@ This project is a genetic algoithm that solves the traveling salesmen problem.
 
 ## assignmentTracker (Python)
 This project is a script that keeps track of assignments and when they are due.
+
+## Sieve (Haskell)
+This project is a program that implements the Sieve algorithm to find prime numbers. 
