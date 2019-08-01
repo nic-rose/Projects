@@ -5,6 +5,12 @@ This is done by iteratively finding the multiples of each prime because these nu
 The Sieve algorithm takes advantage of Haskells lazy lists because even though the programm can run for forever the program with allows run because it is done iterativley and not 
 recursivly. 
 
+## Set Up/Run
+
+- `ghci sieve.hs`
+
+    This command will take you to the Haskell command line. At this point you can type in a function name and the paramaters in order to excute the code.  `Sieve [2..][]` will give you every prime number in existance.  
+
 ## In Depth Analysis
 - prods
 
