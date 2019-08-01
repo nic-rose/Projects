@@ -10,4 +10,7 @@ This project is a genetic algoithm that solves the traveling salesmen problem.
 This project is a script that keeps track of assignments and when they are due.
 
 ## Sieve (Haskell)
-This project is a program that implements the Sieve algorithm to find prime numbers. 
+This project is a program that implements the Sieve algorithm to find prime numbers.
+
+## httpServer (C)
+This project is a program that implements a http server.
