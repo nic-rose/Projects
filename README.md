@@ -14,3 +14,6 @@ This project is a program that implements the Sieve algorithm to find prime numb
 
 ## httpServer (C)
 This project is a program that implements a http server.
+
+## pig (Java)
+This project is a Android application that helps the user memorize text, specifically bible verses. I worked on this project with four others individuals.
