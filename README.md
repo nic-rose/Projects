@@ -17,3 +17,6 @@ This project is a program that implements a http server.
 
 ## pig (Java)
 This project is a Android application that helps the user memorize text, specifically bible verses. I worked on this project with four others individuals.
+
+## BinaryTrees (Prolog)
+This goal of this assignment is to write a collection on Prolog rules to represent and manipulate binary trees.
